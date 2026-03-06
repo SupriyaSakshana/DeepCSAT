@@ -37,3 +37,8 @@ print(df.info())
 print("\n🔹 Statistical Summary:")
 print(df.describe())
 
+# Dataset Rows & Columns count
+
+
+rows, cols = df.shape
+print(f"📊 The dataset contains {rows} rows and {cols} columns.")
