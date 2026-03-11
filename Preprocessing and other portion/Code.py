@@ -42,3 +42,16 @@ print(df.describe())
 
 rows, cols = df.shape
 print(f"📊 The dataset contains {rows} rows and {cols} columns.")
+
+
+
+# Dataset Info
+# Get a concise summary of the dataset
+print("🔹 Dataset Information:")
+print(df.info())
+
+
+
+# Check data types and non-null counts
+print("\n🔹 Data Types and Non-Null Values:")
+print(df.dtypes)
