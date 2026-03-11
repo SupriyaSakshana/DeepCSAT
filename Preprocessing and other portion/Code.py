@@ -55,3 +55,23 @@ print(df.info())
 # Check data types and non-null counts
 print("\n🔹 Data Types and Non-Null Values:")
 print(df.dtypes)
+
+
+# Missing Values/Null Values Count
+
+
+# Count total missing values per column
+missing_values = df.isnull().sum()
+
+print("🔹 Missing Values Count per Column:")
+print(missing_values)
+
+# Count total missing values in the dataset
+total_missing = missing_values.sum()
+print(f"\n🧾 Total Missing Values in the Dataset: {total_missing}")
+
+# Check if any column has missing values
+if total_missing == 0:
+    print("✅ No missing values found in the dataset.")
+else:
+    print("⚠️ Missing values detected — consider handling them in preprocessing.")
