@@ -1,0 +1,18 @@
+Simple Workflow
+
+
+git add Code.py
+git commit -m "Updated preprocessing code"
+git push origin main
+
+
+If more than two file 
+
+git add .
+git commit -m "Added requirements file and notes"
+git push origin main
+
+
+Auto-generate requirements
+
+pip freeze > requirements.txt
